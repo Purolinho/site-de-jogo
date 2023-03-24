@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.884);
+}
+
+nav {
+    background-color: rgba(255,43,114,255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: x-large;
+    border: solid white 1px;    
+    color: white;
+    overflow: hidden;
+    height: 8vh;
+}
+
+nav > img {
+    width: 50px;
+    margin: 0% 6% 0% 0.5%;
+}
+
+ul {
+    font-size: x-large;
+    display: flex;
+    list-style-type: none;
+}
+
+ul:nth-child(2) {
+    gap: 10px;
+}
+
+ul:nth-child(3) > li > button {
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    height: 6.5vh;
+    padding: 1% 3% 1% 3%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: linear-gradient(to right, #ee7aa0, rgb(241, 19, 186));
+    border: solid white 1px;
+    min-width: fit-content;
+    width: 7vw;
+}
+
+ul:nth-child(3) {
+    gap: 0.8vw;
+    margin-right: 0.5vw;
+}
+
+main {
+    margin-top: 0.5svh;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.jogos {
+    display: flex;
+    flex-grow: 1;
+    transition: 1s;
+    gap: 1px;
+    border: solid white 2px;
+    height: 34.1vh;
+
+}
+
+.jogos > img {
+    width: 19.96%;
+
+}
+
+main > h1 {
+    border: 1px solid white;
+    width: fit-content;
+    margin: 1% auto 0%;
+    padding: 0.5%;
+    background-color: rgba(255,43,114,255);
+}
+
+
+#jogos1 {
+    margin-top: 1%;
+}
+
+
+#info {
+    display: none;
+    gap: 2vh;
+    width: 70vw;
+    height: 35vh;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    border: solid white 2px;
+    flex-direction: column;
+    background-color: #f08aac00;
+}
+
+#titulo {
+    font-size: xx-large;
+}
+
+#descrição, #avaliação, p, a {
+    font-size: x-large;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255,46,114,255);
+    margin-left: 1%;
+}
+
+ul:nth-child(4) {
+    margin-left: 12%;
+    width: 30vw;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        width: 20vw;
+        height: 100svh;
+    }
+    ul {
+        flex-direction: column;
+    }
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #000000;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ff2e72;
+    border-radius: 22px;
+    border: 1px solid #ffffff;
+  }
